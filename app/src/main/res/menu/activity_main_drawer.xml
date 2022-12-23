@@ -21,5 +21,10 @@
             android:id="@+id/nav_input"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Input" />
+
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Data" />
     </group>
 </menu>

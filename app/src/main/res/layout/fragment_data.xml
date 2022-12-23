@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.data.DataFragment">
+
+    <EditText
+        android:id="@+id/etHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Write your hobby" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save hobby"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etHobby"
+        />
+
+    <TextView
+        android:id="@+id/tvShowHobby"
+        android:hint="Here the hobby will be shown"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSaveHobby"
+        android:layout_margin="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get hobby"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tvShowHobby"
+        />
+
+</RelativeLayout>
