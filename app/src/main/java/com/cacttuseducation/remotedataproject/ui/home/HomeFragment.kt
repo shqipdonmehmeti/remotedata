@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.cacttuseducation.remotedataproject.R
 import com.cacttuseducation.remotedataproject.api.ServiceAPI
 import com.cacttuseducation.remotedataproject.databinding.FragmentHomeBinding
 import com.cacttuseducation.remotedataproject.helpers.SingletonHelpersObject
@@ -31,7 +33,8 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnGetAllPosts.setOnClickListener {
-            makeApiCalls()
+//            makeApiCalls()
+            findNavController().navigate(HomeFragmentDirections.actionNavHomeToHomeDetailsFragment("Bill"))
         }
 
     }

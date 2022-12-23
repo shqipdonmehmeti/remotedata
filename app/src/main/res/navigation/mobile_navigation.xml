@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.cacttuseducation.remotedataproject.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_homeDetailsFragment"
+            app:destination="@id/homeDetailsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.cacttuseducation.remotedataproject.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/homeDetailsFragment"
+        android:name="com.cacttuseducation.remotedataproject.ui.home_details.HomeDetailsFragment"
+        android:label="fragment_home_details"
+        tools:layout="@layout/fragment_home_details" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
 </navigation>
